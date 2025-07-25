@@ -37,13 +37,14 @@ a:hover {
 }
 
 .logo {
-  width: 100px;
+  width: 400px;
   margin-bottom: 10px;
 }
 
 .hero h1 {
-  font-size: 2.8em;
-  color: #FFD07B; /* Ámbar suave */
+  font-size: 0.1em;
+  color: #252A42;
+  /* color: #FFD07B; /* Ámbar suave */
 }
 
 .tagline {

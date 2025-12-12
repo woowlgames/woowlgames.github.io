@@ -20,9 +20,12 @@
     <link rel="canonical" href="https://woowlgames.com/">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' style='background-color:%230a0e27; border-radius: 20%'><text x='50' y='50' font-family='sans-serif' font-weight='bold' font-size='60' fill='white' text-anchor='middle' dy='.35em'>WG</text></svg>">
-    <meta name="theme-color" content="#0a0e27">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#f97316">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -163,8 +166,7 @@
             <div class="flex justify-between items-center h-20">
                 <a href="#home" id="navbar-brand" aria-label="WOOWL GAMES"
                     class="font-logo text-xl md:text-2xl tracking-wider opacity-0 transition-opacity duration-300">
-                    WO<span class="text-accent-primary text-xs inline-block relative top-1 -mx-2"
-                        aria-hidden="true">▾</span>OWL GAMES
+                    WOOWL GAMES
                 </a>
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
@@ -243,10 +245,7 @@
             <div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
                 <h1 id="hero-title" class="font-logo text-5xl md:text-6xl lg:text-7xl mb-4 tracking-wide"
                     aria-label="WOOWL GAMES">
-                    WO<span
-                        class="text-accent-primary text-2xl md:text-3xl lg:text-4xl inline-block relative top-2 -mx-3"
-                        aria-hidden="true">▾</span>OWL
-                    GAMES</h1>
+                    WOOWL GAMES</h1>
                 <!-- Badge -->
                 <div
                     class="animate-on-scroll inline-flex items-center gap-2 mb-8 px-6 py-3 backdrop-blur-xl bg-white/5 border border-white/10 rounded-full">
@@ -412,7 +411,12 @@
                         style="animation-delay: 0.2s;">
                         <div
                             class="relative aspect-video bg-gradient-to-br from-gray-800 to-gray-900 flex flex-col items-center justify-center">
-                            <img src="images/games/woowlgames-bilingual-stories.png"/>
+                            <svg class="w-16 h-16 text-gray-500 mb-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                </path>
+                            </svg>
                             <span class="text-gray-500">Coming Soon</span>
                         </div>
                         <div class="p-6">
@@ -731,8 +735,7 @@
                 <div>
                     <div class="flex items-center gap-3 mb-2">
                         <h3 class="font-logo text-xl text-accent-primary" aria-label="WOOWL GAMES">
-                            WO<span class="text-sm inline-block relative top-0.5 -mx-1.5" aria-hidden="true">▾</span>OWL
-                            GAMES</h3>
+                            WOOWL GAMES</h3>
                     </div>
                     <p class="text-gray-300">Creating meaningful interactive experiences</p>
                 </div>
@@ -785,6 +788,15 @@
         <svg id="icon-sun" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+    </button>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top"
+        class="fixed bottom-24 right-6 z-50 w-12 h-12 rounded-full bg-elevated border border-white/20 shadow-lg flex items-center justify-center text-white hover:scale-110 transition-all opacity-0 invisible"
+        title="Volver arriba" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
         </svg>
     </button>
 
@@ -1124,6 +1136,18 @@
         document.addEventListener('DOMContentLoaded', () => {
             const savedMode = localStorage.getItem('woowl-mode') || 'dark';
             applyTheme(savedMode);
+        });
+
+        // Scroll to Top button visibility
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
         });
     </script>
 

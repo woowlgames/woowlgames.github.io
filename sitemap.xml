@@ -2,17 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://woowlgames.com/</loc>
-        <lastmod>2024-12-10</lastmod>
+        <lastmod>2025-12-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    <!-- Añade más páginas aquí cuando las tengas -->
-    <!--
-    <url>
-        <loc>https://woowlgames.com/games</loc>
-        <lastmod>2024-12-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    -->
 </urlset>

@@ -1,4 +1,11 @@
+# Robots.txt for Woowl Games
+# https://woowlgames.com
+
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://woowlgames.com/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1

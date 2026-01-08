@@ -16,16 +16,15 @@
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
 
-    <!-- Canonical URL - CAMBIAR por tu dominio real -->
+
     <link rel="canonical" href="https://woowlgames.com/">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#f97316">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="theme-color" content="#FF5F1F">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -34,7 +33,7 @@
     <meta property="og:description"
         content="Woowl Games creates interactive experiences blending exploration, mystery, narrative, and experimental gameplay for mobile and PC.">
     <meta property="og:image"
-        content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' style='background-color:%230a0e27; border-radius: 20%'><text x='50' y='50' font-family='sans-serif' font-weight='bold' font-size='60' fill='white' text-anchor='middle' dy='.35em'>WG</text></svg>">
+        content="https://woowlgames.com/logo.svg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Woowl Games">
@@ -47,7 +46,7 @@
     <meta property="twitter:description"
         content="Woowl Games creates interactive experiences blending exploration, mystery, narrative, and experimental gameplay for mobile and PC.">
     <meta property="twitter:image"
-        content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' style='background-color:%230a0e27; border-radius: 20%'><text x='50' y='50' font-family='sans-serif' font-weight='bold' font-size='60' fill='white' text-anchor='middle' dy='.35em'>WG</text></svg>">
+        content="https://woowlgames.com/logo.svg">
     <meta property="twitter:site" content="@woowlgames">
     <meta property="twitter:creator" content="@woowlgames">
 
@@ -94,6 +93,54 @@
                 },
                 "url": "https://play.google.com/store/apps/details?id=com.AlberDeveloper.dev.halloweenmemory.lite"
             }
+    }
+    </script>
+    <!-- FAQ Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Woowl Games?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Woowl Games is an independent game development studio focused on creating small, thoughtful, and atmospheric game experiences. The studio combines accessibility with strong identity, prioritizing clarity, mood, and intention in every project."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What type of games does Woowl Games create?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Woowl Games creates casual, narrative, and experimental games that are easy to play but carefully designed. Its projects focus on simple mechanics, clear interactions, and memorable moments rather than complexity."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I find Woowl Games projects?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can find Woowl Games projects on platforms like Google Play and itch.io, as well as showcased on the official website. New releases and experiments are published regularly as part of the studio's indie development journey."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What makes Woowl Games different from other indie studios?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "What sets Woowl Games apart is its focus on intention over scale. Each game is designed to be accessible, focused, and atmospheric, offering meaningful experiences without unnecessary complexity."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why the name Woowl?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The name Woowl Games combines 'wow' and 'owl,' symbolizing curiosity, discovery, and thoughtful design. It reflects the studio's goal of creating games that surprise players while remaining calm, observant, and carefully crafted."
+                }
+            }
         ]
     }
     </script>
@@ -101,7 +148,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bangers&family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
@@ -114,17 +161,18 @@
                     fontFamily: {
                         sans: ['Nunito', 'system-ui', '-apple-system', 'sans-serif'],
                         display: ['"Baloo 2"', 'Nunito', 'system-ui', 'sans-serif'],
-                        logo: ['Bangers', 'cursive'],
+                        logo: ['Fredoka', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#0a0e27',
-                        secondary: '#0f1429',
-                        tertiary: '#151a35',
-                        elevated: '#1a1f3a',
+                        primary: '#020617',
+                        secondary: '#0a0d1f',
+                        tertiary: '#0f1429',
+                        elevated: '#151a35',
+                        textPrimary: '#F2E9DC',
                         accent: {
-                            primary: '#8b5cf6',
-                            secondary: '#6366f1',
-                            tertiary: '#a78bfa',
+                            primary: '#FF5F1F',
+                            secondary: '#FF7F50',
+                            tertiary: '#FFA500',
                         }
                     },
                     animation: {
@@ -151,8 +199,8 @@
                         },
                     },
                     boxShadow: {
-                        'glow': '0 0 20px rgba(139, 92, 246, 0.3)',
-                        'glow-hover': '0 0 40px rgba(139, 92, 246, 0.5)',
+                        'glow': '0 0 20px rgba(255, 95, 31, 0.4)',
+                        'glow-hover': '0 0 40px rgba(255, 95, 31, 0.6)',
                     }
                 },
             },
@@ -167,8 +215,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="#home" id="navbar-brand" aria-label="WOOWL GAMES"
-                    class="font-logo text-xl md:text-2xl tracking-wider opacity-0 transition-opacity duration-300">
-                    WOOWL GAMES
+                    class="opacity-0 transition-opacity duration-300 flex items-center gap-3">
+                    <img src="logo.svg" alt="Woowl Games Logo" class="h-9 w-auto">
+                    <span class="font-logo font-extrabold text-3xl" style="color: #F2E9DC;">WOOWL GAMES</span>
                 </a>
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
@@ -190,6 +239,8 @@
                     <a href="#press"
                         class="nav-link text-gray-300 hover:text-accent-primary transition-colors text-sm font-medium relative group">Press
                         Kit<span class="nav-underline"></span></a>
+                    <a href="#faq"
+                        class="nav-link text-gray-300 hover:text-accent-primary transition-colors text-sm font-medium relative group">FAQ<span class="nav-underline"></span></a>
                     <a href="#blog"
                         class="nav-link text-gray-300 hover:text-accent-primary transition-colors text-sm font-medium relative group">Blog<span
                             class="nav-underline"></span></a>
@@ -234,20 +285,21 @@
             class="min-h-screen flex items-center justify-center relative overflow-hidden bg-primary pt-20">
             <!-- Animated Gradient Orbs -->
             <div class="absolute inset-0 overflow-hidden">
-                <div class="orb orb-1 absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 opacity-20 blur-[120px] animate-float"
+                <div class="orb orb-1 absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary opacity-20 blur-[120px] animate-float"
                     style="top: 10%; left: 10%;"></div>
-                <div class="orb orb-2 absolute w-[500px] h-[500px] rounded-full bg-gradient-to-r from-pink-500 via-accent-primary to-accent-secondary opacity-15 blur-[100px] animate-float-delayed"
+                <div class="orb orb-2 absolute w-[500px] h-[500px] rounded-full bg-gradient-to-r from-accent-tertiary via-accent-primary to-accent-secondary opacity-15 blur-[100px] animate-float-delayed"
                     style="bottom: 10%; right: 10%;"></div>
-                <div class="orb orb-3 absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-10 blur-[90px] animate-float-slow"
+                <div class="orb orb-3 absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-accent-secondary to-accent-tertiary opacity-10 blur-[90px] animate-float-slow"
                     style="top: 50%; left: 50%;"></div>
             </div>
             <!-- Grid pattern overlay -->
             <div class="absolute inset-0 grid-pattern opacity-40"></div>
             <!-- Content -->
             <div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
-                <h1 id="hero-title" class="font-logo text-5xl md:text-6xl lg:text-7xl mb-4 tracking-wide"
-                    aria-label="WOOWL GAMES">
-                    WOOWL GAMES</h1>
+                <div id="hero-title" class="mb-6 flex flex-col items-center">
+                    <img src="logo.svg" alt="Woowl Games - Indie Game Developer Logo" class="w-48 h-auto md:w-64 mb-4">
+                    <h1 class="font-logo font-extrabold text-4xl md:text-5xl lg:text-6xl tracking-wider" style="color: #F2E9DC;">WOOWL GAMES</h1>
+                </div>
                 <!-- Badge -->
                 <div
                     class="animate-on-scroll inline-flex items-center gap-2 mb-8 px-6 py-3 backdrop-blur-xl bg-white/5 border border-white/10 rounded-full">
@@ -262,7 +314,7 @@
                 <!-- Main heading -->
                 <div class="animate-on-scroll mb-6" style="animation-delay: 0.2s;">
                     <h2
-                        class="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent leading-tight">
+                        class="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent leading-tight">
                         We Create<br>Extraordinary Worlds</h2>
                 </div>
                 <!-- Subtitle -->
@@ -276,7 +328,7 @@
                 <div class="animate-on-scroll flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
                     style="animation-delay: 0.6s;">
                     <a href="#games"
-                        class="group relative px-8 py-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 text-white rounded-xl font-semibold shadow-lg shadow-glow hover:shadow-glow-hover transition-all overflow-hidden hover:-translate-y-1">
+                        class="group relative px-8 py-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-white rounded-xl font-semibold shadow-lg shadow-glow hover:shadow-glow-hover transition-all overflow-hidden hover:-translate-y-1">
                         <span class="relative z-10">Play Now</span>
                         <div
                             class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
@@ -302,39 +354,28 @@
         <section id="about" class="py-16 bg-secondary relative overflow-hidden">
             <div class="absolute inset-0 opacity-30">
                 <div
-                    class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 rounded-full blur-[100px] opacity-20">
+                    class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary rounded-full blur-[100px] opacity-20">
                 </div>
                 <div
-                    class="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-pink-500 via-accent-primary to-accent-secondary rounded-full blur-[120px] opacity-15">
+                    class="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-accent-tertiary via-accent-primary to-accent-secondary rounded-full blur-[120px] opacity-15">
                 </div>
             </div>
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <h2
-                    class="animate-on-scroll font-display text-5xl md:text-7xl font-bold text-center mb-6 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                    class="animate-on-scroll font-display text-5xl md:text-7xl font-bold text-center mb-6 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                     About</h2>
                 <p class="animate-on-scroll text-center text-gray-500 mb-16 text-lg">Crafting unique interactive
                     experiences</p>
                 <div
                     class="animate-on-scroll bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 shadow-glow max-w-4xl mx-auto mb-12">
                     <p class="text-xl md:text-2xl text-white mb-6 leading-relaxed">
-                        <strong class="text-accent-primary">Woowl Games</strong> is more than just a name—it is a
-                        deliberate design choice that reflects our identity. Born from the fusion of "Wow" (the spark of
-                        wonder) and "Owl" (the symbol of wisdom and observation), the name itself is a typographic
-                        puzzle: the <strong class="text-accent-primary">W</strong> spreads like wings aiming for new
-                        heights, the double <strong class="text-accent-primary">OO</strong> watches the world with the
-                        wide eyes of a nocturnal explorer, and the <strong class="text-accent-primary">L</strong>
-                        balances the composition like a steady tail. This "fantastic owl" hidden in plain text is the
-                        perfect emblem for our studio: we hide magic in the details, waiting for the curious to find it.
+                        <strong class="text-accent-primary">Woowl Games</strong> is where wonder meets observation. Born from the fusion of <strong class="text-accent-primary">"Wow"</strong> (the spark of discovery) and <strong class="text-accent-primary">"Owl"</strong> (silent wisdom and patient vision), our name captures what we do: we create moments of surprise with intention.
                     </p>
                     <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-                        As an independent game development studio, we operate under the cover of creativity, much like
-                        our nocturnal namesake. We believe that the best interactive experiences are those that respect
-                        the player's intelligence. Whether building atmospheric narrative adventures for PC or polished,
-                        snappy experiences for mobile, the <strong class="text-accent-primary">Woowl Games</strong>
-                        approach remains constant: blend <strong class="text-white">experimental gameplay
-                            mechanics</strong> with <strong class="text-white">rich, immersive storytelling</strong>. We
-                        don't just write code; we craft worlds where every pixel and every line of dialogue serves a
-                        greater mystery.
+                        We don't chase trends or build for noise. <strong class="text-accent-primary">Woowl Games</strong> crafts <strong class="text-white">casual-intelligent experiences</strong>—games that are accessible without being shallow, narratives that are light but leave an impression, mechanics that are simple yet deliberate. Our work explores what others overlook, inviting players to see beyond the surface.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Like our namesake, <strong class="text-accent-primary">Woowl Games</strong> doesn't need to shout. We observe, we craft, we deliver experiences that respect your time and reward your curiosity. Small in scope, strong in identity—because volume isn't our goal. <strong class="text-white">Intention is.</strong>
                     </p>
                     <p class="text-lg text-gray-300 leading-relaxed">
                         Our mission is simple but ambitious: to spark curiosity in an often predictable world. <strong
@@ -342,29 +383,63 @@
                         deeper, and explore further.
                     </p>
                 </div>
+                
+                <!-- Philosophy Cards -->
+                <div class="grid md:grid-cols-3 gap-6 mb-16">
+                    <!-- Card 1: Soul & Accessibility -->
+                    <div class="animate-on-scroll group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/8 hover:border-accent-primary/50 transition-all duration-300 hover:shadow-glow">
+                        <div class="flex items-center justify-center w-14 h-14 rounded-full bg-accent-primary/20 border border-accent-primary/30 mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-heart text-2xl text-accent-primary"></i>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            <strong class="text-accent-primary">Woowl Games</strong> creates accessible games with soul, where curiosity, atmosphere, and simple ideas combine to deliver small but memorable experiences.
+                        </p>
+                    </div>
+
+                    <!-- Card 2: Silent Discovery -->
+                    <div class="animate-on-scroll group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/8 hover:border-accent-primary/50 transition-all duration-300 hover:shadow-glow">
+                        <div class="flex items-center justify-center w-14 h-14 rounded-full bg-accent-primary/20 border border-accent-primary/30 mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-eye text-2xl text-accent-primary"></i>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            At <strong class="text-accent-primary">Woowl Games</strong> we design games discovered in silence: clear, polished experiences with personality, made to surprise without complications.
+                        </p>
+                    </div>
+
+                    <!-- Card 3: Intentional Experiences -->
+                    <div class="animate-on-scroll group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/8 hover:border-accent-primary/50 transition-all duration-300 hover:shadow-glow">
+                        <div class="flex items-center justify-center w-14 h-14 rounded-full bg-accent-primary/20 border border-accent-primary/30 mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-lightbulb text-2xl text-accent-primary"></i>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            <strong class="text-accent-primary">Woowl Games</strong> is an indie studio focused on casual and narrative games, where simplicity, exploration, and detail turn every idea into an intentional experience.
+                        </p>
+                    </div>
+                </div>
+                
                 <!-- Stats -->
                 <h2
-                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                     Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div
                         class="animate-on-scroll bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 text-center hover:shadow-glow-hover transition-all hover:-translate-y-1">
                         <div
-                            class="font-display text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                            class="font-display text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                             3</div>
                         <div class="text-gray-300 text-sm md:text-base font-medium">Out of the Nest</div>
                     </div>
                     <div class="animate-on-scroll bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 text-center hover:shadow-glow-hover transition-all hover:-translate-y-1"
                         style="animation-delay: 0.1s;">
                         <div
-                            class="font-display text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                            class="font-display text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                             2</div>
                         <div class="text-gray-300 text-sm md:text-base font-medium">In Flight</div>
                     </div>
                     <div class="animate-on-scroll bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 text-center hover:shadow-glow-hover transition-all hover:-translate-y-1"
                         style="animation-delay: 0.2s;">
                         <div
-                            class="font-display text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                            class="font-display text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                             ∞</div>
                         <div class="text-gray-300 text-sm md:text-base font-medium">Wise Ideas</div>
                     </div>
@@ -376,7 +451,7 @@
         <section id="games" class="py-16 bg-primary">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2
-                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                     Games</h2>
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- Game Card 1 -->
@@ -390,8 +465,9 @@
                         <div class="p-6">
                             <div class="flex items-start justify-between gap-3 mb-3">
                                 <h3 class="font-display text-2xl font-bold text-white">Halloween Memory</h3>
+                                <p class="text-sm text-gray-400 mt-1">by Woowl Games</p>
                                 <span
-                                    class="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide whitespace-nowrap flex-shrink-0 bg-green-500/20 text-green-400 border border-green-400">Published</span>
+                                    class="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide whitespace-nowrap flex-shrink-0 published-badge">Published</span>
                             </div>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span
@@ -412,7 +488,7 @@
                             </div>
                             <a href="https://play.google.com/store/apps/details?id=com.AlberDeveloper.dev.halloweenmemory.lite"
                                 target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 text-white rounded-lg font-semibold hover:shadow-glow transition-all">
+                                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-white rounded-lg font-semibold hover:shadow-glow transition-all">
                                 <i class="fa-brands fa-google-play"></i>
                                 Google Play
                             </a>
@@ -422,19 +498,22 @@
                     <article
                         class="animate-on-scroll relative bg-elevated rounded-2xl overflow-hidden shadow-xl border border-white/5 hover:shadow-glow transition-all hover:-translate-y-2"
                         style="animation-delay: 0.2s;">
-                        <div
-                            class="relative aspect-video bg-gradient-to-br from-gray-800 to-gray-900 flex flex-col items-center justify-center">
-                            <svg class="w-16 h-16 text-gray-500 mb-4" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                </path>
-                            </svg>
-                            <span class="text-gray-500">Coming Soon</span>
+                        <div class="relative aspect-video bg-gray-900 overflow-hidden group">
+                            <img src="./images/games/woowlgames-bilingual-stories.png"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                alt="Coming Soon" />
+                            <div
+                                class="absolute inset-0 bg-black/40 flex items-center justify-center backdrop-blur-[2px] z-10">
+                                <span
+                                    class="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg text-white font-medium tracking-wider uppercase shadow-lg">
+                                    Coming Soon
+                                </span>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between gap-3 mb-3">
                                 <h3 class="font-display text-2xl font-bold text-white">Interactive Stories for Kids</h3>
+                                <p class="text-sm text-gray-400 mt-1">by Woowl Games</p>
                                 <span
                                     class="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide whitespace-nowrap flex-shrink-0 bg-yellow-500/20 text-yellow-400 border border-yellow-400">In
                                     Development</span>
@@ -469,7 +548,7 @@
         <section id="tools" class="py-16 bg-secondary">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2
-                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                     Tools & Assets</h2>
                 <p class="animate-on-scroll text-center text-gray-300 text-lg mb-16">Professional development tools for
                     Unity creators</p>
@@ -485,8 +564,9 @@
                         <div class="p-6">
                             <div class="flex items-start justify-between gap-3 mb-3">
                                 <h3 class="font-display text-2xl font-bold text-white">Mobile Icon Generator</h3>
+                                <p class="text-sm text-gray-400 mt-1">developed by Woowl Games</p>
                                 <span
-                                    class="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide whitespace-nowrap flex-shrink-0 bg-green-500/20 text-green-400 border border-green-400">Published</span>
+                                    class="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide whitespace-nowrap flex-shrink-0 published-badge\u0022\u003ePublished</span>
                             </div>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span
@@ -508,7 +588,7 @@
                             </div>
                             <a href="https://assetstore.unity.com/packages/tools/utilities/mobile-icon-generator-327748?aid=1011lHuMX"
                                 target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 text-white rounded-lg font-semibold hover:shadow-glow transition-all">
+                                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-white rounded-lg font-semibold hover:shadow-glow transition-all">
                                 <i class="fa-brands fa-unity"></i>
                                 Unity Asset Store
                             </a>
@@ -526,8 +606,9 @@
                         <div class="p-6">
                             <div class="flex items-start justify-between gap-3 mb-3">
                                 <h3 class="font-display text-2xl font-bold text-white">Tab Size Info</h3>
+                                <p class="text-sm text-gray-400 mt-1">developed by Woowl Games</p>
                                 <span
-                                    class="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide whitespace-nowrap flex-shrink-0 bg-green-500/20 text-green-400 border border-green-400">Published</span>
+                                    class="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide whitespace-nowrap flex-shrink-0 published-badge\u0022\u003ePublished</span>
                             </div>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span
@@ -548,7 +629,7 @@
                             </div>
                             <a href="https://assetstore.unity.com/packages/tools/utilities/tab-size-info-323946?aid=1011lHuMX"
                                 target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 text-white rounded-lg font-semibold hover:shadow-glow transition-all">
+                                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-white rounded-lg font-semibold hover:shadow-glow transition-all">
                                 <i class="fa-brands fa-unity"></i>
                                 Unity Asset Store
                             </a>
@@ -562,7 +643,7 @@
         <section id="playground" class="py-16 bg-primary">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2
-                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                     Owl Lab</h2>
                 <p class="animate-on-scroll text-center text-gray-300 text-lg mb-16">Experimental projects and creative
                     explorations</p>
@@ -586,7 +667,7 @@
         <section id="press" class="py-16 bg-secondary">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2
-                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-16 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                     Press Kit</h2>
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="animate-on-scroll bg-elevated rounded-xl p-6 shadow-lg border border-white/5">
@@ -648,11 +729,78 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-secondary relative overflow-hidden">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <h2
+                    class="animate-on-scroll font-display text-5xl md:text-7xl font-bold text-center mb-6 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
+                    FAQ</h2>
+                <p class="animate-on-scroll text-center text-gray-400 mb-12 text-lg">Frequently Asked Questions</p>
+
+                <div class="space-y-4">
+                    <!-- Question 1 -->
+                    <details class="animate-on-scroll group bg-elevated border border-white/10 rounded-2xl overflow-hidden hover:border-accent-primary/30 transition-all">
+                        <summary class="cursor-pointer p-6 font-semibold text-white text-lg flex justify-between items-center group-hover:text-accent-primary transition-colors">
+                            What is Woowl Games?
+                            <i class="fas fa-chevron-down text-accent-primary transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            <strong class="text-accent-primary">Woowl Games</strong> is an independent game development studio focused on creating small, thoughtful, and atmospheric game experiences. The studio combines accessibility with strong identity, prioritizing clarity, mood, and intention in every project.
+                        </div>
+                    </details>
+
+                    <!-- Question 2 -->
+                    <details class="animate-on-scroll group bg-elevated border border-white/10 rounded-2xl overflow-hidden hover:border-accent-primary/30 transition-all">
+                        <summary class="cursor-pointer p-6 font-semibold text-white text-lg flex justify-between items-center group-hover:text-accent-primary transition-colors">
+                            What type of games does Woowl Games create?
+                            <i class="fas fa-chevron-down text-accent-primary transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            <strong class="text-accent-primary">Woowl Games</strong> creates casual, narrative, and experimental games that are easy to play but carefully designed. Its projects focus on simple mechanics, clear interactions, and memorable moments rather than complexity.
+                        </div>
+                    </details>
+
+                    <!-- Question 3 -->
+                    <details class="animate-on-scroll group bg-elevated border border-white/10 rounded-2xl overflow-hidden hover:border-accent-primary/30 transition-all">
+                        <summary class="cursor-pointer p-6 font-semibold text-white text-lg flex justify-between items-center group-hover:text-accent-primary transition-colors">
+                            Where can I find Woowl Games projects?
+                            <i class="fas fa-chevron-down text-accent-primary transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            You can find <strong class="text-accent-primary">Woowl Games</strong> projects on platforms like Google Play and itch.io, as well as showcased on the official website. New releases and experiments are published regularly as part of the studio's indie development journey.
+                        </div>
+                    </details>
+
+                    <!-- Question 4 -->
+                    <details class="animate-on-scroll group bg-elevated border border-white/10 rounded-2xl overflow-hidden hover:border-accent-primary/30 transition-all">
+                        <summary class="cursor-pointer p-6 font-semibold text-white text-lg flex justify-between items-center group-hover:text-accent-primary transition-colors">
+                            What makes Woowl Games different from other indie studios?
+                            <i class="fas fa-chevron-down text-accent-primary transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            What sets <strong class="text-accent-primary">Woowl Games</strong> apart is its focus on intention over scale. Each game is designed to be accessible, focused, and atmospheric, offering meaningful experiences without unnecessary complexity.
+                        </div>
+                    </details>
+
+                    <!-- Question 5 -->
+                    <details class="animate-on-scroll group bg-elevated border border-white/10 rounded-2xl overflow-hidden hover:border-accent-primary/30 transition-all">
+                        <summary class="cursor-pointer p-6 font-semibold text-white text-lg flex justify-between items-center group-hover:text-accent-primary transition-colors">
+                            Why the name "Woowl"?
+                            <i class="fas fa-chevron-down text-accent-primary transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            The name <strong class="text-accent-primary">Woowl Games</strong> combines "wow" and "owl," symbolizing curiosity, discovery, and thoughtful design. It reflects the studio's goal of creating games that surprise players while remaining calm, observant, and carefully crafted.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
         <!-- Blog Section -->
         <section id="blog" class="py-16 bg-primary">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2
-                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                     Dev Blog</h2>
                 <p class="animate-on-scroll text-center text-gray-300 text-lg mb-16">Development updates, insights, and
                     behind-the-scenes</p>
@@ -676,7 +824,7 @@
         <section id="contact" class="py-16 bg-secondary">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2
-                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-8 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 bg-clip-text text-transparent">
+                    class="animate-on-scroll font-display text-4xl md:text-6xl font-bold text-center mb-8 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary bg-clip-text text-transparent">
                     Get in Touch</h2>
                 <p class="animate-on-scroll text-center text-gray-300 text-lg mb-16 max-w-3xl mx-auto">Interested in
                     collaborating, have questions about a project, or just want to say hi? Feel free to reach out
@@ -686,7 +834,7 @@
                     <a href="mailto:woowlgames@gmail.com" target="_blank" rel="noopener noreferrer"
                         class="animate-on-scroll bg-elevated rounded-xl p-8 text-center shadow-lg border border-white/5 hover:shadow-glow transition-all hover:-translate-y-1">
                         <div
-                            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 rounded-full flex items-center justify-center text-white">
+                            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary rounded-full flex items-center justify-center text-white">
                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
@@ -700,7 +848,7 @@
                         class="animate-on-scroll bg-elevated rounded-xl p-8 text-center shadow-lg border border-white/5 hover:shadow-glow transition-all hover:-translate-y-1"
                         style="animation-delay: 0.1s;">
                         <div
-                            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-blue-500 rounded-full flex items-center justify-center text-white">
+                            class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary rounded-full flex items-center justify-center text-white">
                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
@@ -759,10 +907,10 @@
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <div class="flex items-center gap-3 mb-2">
-                        <h3 class="font-logo text-xl text-accent-primary" aria-label="WOOWL GAMES">
-                            WOOWL GAMES</h3>
+                        <img src="logo.svg" alt="Woowl Games - Indie Studio" class="h-8 w-auto">
+                        <span class="font-logo font-extrabold text-2xl" style="color: #F2E9DC;">WOOWL GAMES</span>
                     </div>
-                    <p class="text-gray-300">Creating meaningful interactive experiences</p>
+                    <p class="text-gray-300"><strong class="text-white">Woowl Games</strong> - Creating meaningful interactive experiences since 2024</p>
                 </div>
                 <div>
                     <h4 class="font-display font-semibold text-white mb-3">Navigation</h4>
@@ -800,9 +948,9 @@
         </div>
     </footer>
 
-    <!-- Dark/Light Mode Toggle Button (Simple) -->
+    <!-- Dark/Light Mode Toggle Button - HIDDEN (Dark mode only) -->
     <button id="mode-toggle"
-        class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-elevated border border-white/20 shadow-lg flex items-center justify-center text-white hover:scale-110 transition-all"
+        class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-elevated border border-white/20 shadow-lg flex items-center justify-center text-white hover:scale-110 transition-all hidden"
         title="Cambiar modo">
         <!-- Moon icon (dark mode) -->
         <svg id="icon-moon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -906,16 +1054,16 @@
             */
             orange: {
                 name: 'Naranja',
-                accent: { primary: '#f97316', secondary: '#ea580c', tertiary: '#fb923c' },
+                accent: { primary: '#FF5F1F', secondary: '#FF7F50', tertiary: '#FFA500' },
                 dark: {
-                    bg: { primary: '#1a0f0a', secondary: '#1f1410', tertiary: '#2a1a14', elevated: '#352218' },
-                    text: { primary: '#ffffff', secondary: '#d1d5db', muted: '#9ca3af' }
+                    bg: { primary: '#020617', secondary: '#0a0d1f', tertiary: '#0f1429', elevated: '#151a35' },
+                    text: { primary: '#F2E9DC', secondary: '#d1d5db', muted: '#9ca3af' }
                 },
                 light: {
-                    bg: { primary: '#fff7ed', secondary: '#ffedd5', tertiary: '#fed7aa', elevated: '#ffffff' },
-                    text: { primary: '#1f2937', secondary: '#4b5563', muted: '#6b7280' }
+                    bg: { primary: '#F2E9DC', secondary: '#E8DCC8', tertiary: '#DDD0B5', elevated: '#ffffff' },
+                    text: { primary: '#020617', secondary: '#1e293b', muted: '#475569' }
                 },
-                glow: 'rgba(249, 115, 22, 0.3)'
+                glow: 'rgba(255, 95, 31, 0.4)'
             }
             /* ============================================
                MORE COMMENTED THEMES
@@ -1090,6 +1238,32 @@
                 el.style.background = `linear-gradient(to right, ${theme.accent.primary}, ${theme.accent.secondary}, ${theme.accent.tertiary})`;
             });
 
+            // Update Published badges based on mode
+            document.querySelectorAll('.published-badge').forEach(badge => {
+                if (mode === 'dark') {
+                    badge.style.backgroundColor = 'rgba(16, 185, 129, 0.2)';
+                    badge.style.color = '#10b981';
+                    badge.style.borderColor = '#10b981';
+                } else {
+                    badge.style.backgroundColor = 'rgba(5, 150, 105, 0.2)';
+                    badge.style.color = '#059669';
+                    badge.style.borderColor = '#059669';
+                }
+            });
+
+            // Update buttons for light mode
+            if (mode === 'light') {
+                document.querySelectorAll('a.bg-gradient-to-r:not(.theme-btn):not(.bg-clip-text), button.bg-gradient-to-r:not(.theme-btn)').forEach(btn => {
+                    btn.style.background = '#020617';
+                    btn.style.color = '#ffffff';
+                });
+            } else {
+                document.querySelectorAll('a.bg-gradient-to-r:not(.theme-btn):not(.bg-clip-text), button.bg-gradient-to-r:not(.theme-btn)').forEach(btn => {
+                    btn.style.background = `linear-gradient(to right, ${theme.accent.primary}, ${theme.accent.secondary}, ${theme.accent.tertiary})`;
+                    btn.style.color = '';
+                });
+            }
+
             // Update borders
             document.querySelectorAll('.border-white\\/10, .border-white\\/5, .border-white\\/20').forEach(el => {
                 el.style.borderColor = mode === 'dark' ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
@@ -1145,22 +1319,15 @@
                 iconSun.classList.remove('hidden');
             }
 
-            // Save preference
-            localStorage.setItem('woowl-mode', mode);
+            // Save preference (always dark)
+            localStorage.setItem('woowl-mode', 'dark');
 
-            console.log(`🎨 Mode: ${mode === 'dark' ? 'Oscuro' : 'Claro'} | Theme: Naranja`);
+            console.log(`🎨 Mode: Oscuro (fijo) | Theme: Naranja`);
         }
 
-        // Toggle button handler
-        modeToggle.addEventListener('click', () => {
-            const newMode = currentMode === 'dark' ? 'light' : 'dark';
-            applyTheme(newMode);
-        });
-
-        // Load saved preferences on page load
+        // Load DARK MODE only on page load
         document.addEventListener('DOMContentLoaded', () => {
-            const savedMode = localStorage.getItem('woowl-mode') || 'dark';
-            applyTheme(savedMode);
+            applyTheme('dark');
         });
 
         // Scroll to Top button visibility
@@ -1179,4 +1346,7 @@
     <script src="script.js"></script>
 </body>
 
+
 </html>
+
+

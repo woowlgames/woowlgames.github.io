@@ -36,12 +36,9 @@ jobs:
 
       - name: Copy all files to dist
         run: |
-          cp -r images dist/ 2>/dev/null || true
-          cp index.html dist/
-          cp styles.css dist/ 2>/dev/null || true
-          cp script.js dist/ 2>/dev/null || true
-          cp robots.txt dist/ 2>/dev/null || true
-          cp sitemap.xml dist/ 2>/dev/null || true
+          # Copy everything from current directory to dist, excluding dist itself
+          rsync -av --exclude='dist' --exclude='.git*' --exclude='.github' ./ dist/
+          echo "✅ All files copied to dist"
         
       - name: Minify HTML
         run: |

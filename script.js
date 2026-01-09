@@ -46,13 +46,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const heroObserver = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // Hero title is visible, hide navbar brand
-                    navbarBrand.classList.add('opacity-0');
-                    navbarBrand.classList.remove('opacity-100');
+                    // Hero title is visible, hide navbar brand with slide out effect
+                    navbarBrand.classList.add('opacity-0', '-translate-x-4', 'scale-95');
+                    navbarBrand.classList.remove('opacity-100', 'translate-x-0', 'scale-100');
                 } else {
-                    // Hero title is not visible, show navbar brand
-                    navbarBrand.classList.remove('opacity-0');
-                    navbarBrand.classList.add('opacity-100');
+                    // Hero title is not visible, show navbar brand with slide in effect
+                    navbarBrand.classList.remove('opacity-0', '-translate-x-4', 'scale-95');
+                    navbarBrand.classList.add('opacity-100', 'translate-x-0', 'scale-100');
                 }
             });
         }, { threshold: 0 });
@@ -104,4 +104,45 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    // Active menu section highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function highlightActiveSection() {
+        const scrollPosition = window.scrollY + 100; // Offset for navbar height
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+
+            // Check if we're in this section
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                // Remove active class from all links
+                navLinks.forEach(link => {
+                    link.classList.remove('text-accent-primary');
+                    const underline = link.querySelector('.nav-underline');
+                    if (underline) {
+                        underline.style.width = '0';
+                    }
+                });
+
+                // Add active class to current section's link
+                const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('text-accent-primary');
+                    const underline = activeLink.querySelector('.nav-underline');
+                    if (underline) {
+                        underline.style.width = '100%';
+                    }
+                }
+            }
+        });
+    }
+
+    // Run on scroll
+    window.addEventListener('scroll', highlightActiveSection);
+    // Run on load
+    highlightActiveSection();
 });

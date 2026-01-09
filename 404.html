@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Woowl Games</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'system-ui', '-apple-system', 'sans-serif'],
+                        display: ['"Baloo 2"', 'Nunito', 'system-ui', 'sans-serif'],
+                        logo: ['Fredoka', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#020617',
+                        secondary: '#0a0d1f',
+                        accent: {
+                            primary: '#FF5F1F',
+                            secondary: '#FF7F50',
+                            tertiary: '#FFA500',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #020617;
+            color: #F2E9DC;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+            z-index: -1;
+        }
+
+        .error-code {
+            font-size: 12rem;
+            font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(to right, #FF5F1F, #FF7F50, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0.2;
+            position: absolute;
+            z-index: 0;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <div class="stars"></div>
+    
+    <div class="relative z-10 text-center px-4">
+        <div class="error-code select-none left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">404</div>
+        
+        <div class="animate-float mb-8">
+            <img src="woowl-games-logo.svg" alt="Woowl Games Logo" class="w-32 h-auto mx-auto drop-shadow-[0_0_15px_rgba(255,95,31,0.5)]">
+        </div>
+
+        <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Lost in the Woods?</h1>
+        <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-md mx-auto">
+            The page you're looking for has flown away into the dark. Don't worry, the owl will guide you back home.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://woowlgames.com" 
+               class="px-8 py-4 bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-tertiary text-white rounded-xl font-semibold shadow-lg hover:shadow-[0_0_30px_rgba(255,95,31,0.5)] transition-all transform hover:-translate-y-1 active:scale-95">
+                Back to Home
+            </a>
+            <a href="https://woowlgames.com/#contact" 
+               class="px-8 py-4 bg-white/5 backdrop-blur-xl border border-white/10 text-accent-primary rounded-xl font-semibold hover:border-accent-primary transition-all hover:-translate-y-1 active:scale-95">
+                Report Issue
+            </a>
+        </div>
+
+        <div class="mt-16 opacity-30">
+            <p class="text-sm uppercase tracking-widest font-logo">Woowl Games</p>
+        </div>
+    </div>
+
+    <!-- Background Orbs -->
+    <div class="absolute top-1/4 -left-20 w-80 h-80 bg-accent-primary/10 rounded-full blur-[100px] animate-pulse-slow"></div>
+    <div class="absolute bottom-1/4 -right-20 w-80 h-80 bg-accent-tertiary/10 rounded-full blur-[100px] animate-pulse-slow" style="animation-delay: 2s;"></div>
+</body>
+
+</html>
